@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+        }
+
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            margin: 30px auto;
+        }
+
+        #gallery a {
+            display: block;
+        }
+
+        #gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        #gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            #gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Images of Jesus Christ</h1>
+    <p>Click on an image to view the full-size picture.</p>
+
+    <div id="gallery">
+        <a href="images/big/img1.jpg">
+            <img src="images/small/img1.jpg" alt="Jesus Christ artwork 1">
+        </a>
+
+        <a href="images/big/img2.jpg">
+            <img src="images/small/img2.jpg" alt="Jesus Christ artwork 2">
+        </a>
+
+        <a href="images/big/img3.jpg">
+            <img src="images/small/img3.jpg" alt="Jesus Christ artwork 3">
+        </a>
+
+        <a href="images/big/img4.jpg">
+            <img src="images/small/img4.jpg" alt="Jesus Christ artwork 4">
+        </a>
+
+        <a href="images/big/img5.jpg">
+            <img src="images/small/img5.jpg" alt="Jesus Christ artwork 5">
+        </a>
+
+        <a href="images/big/img6.jpg">
+            <img src="images/small/img6.jpg" alt="Jesus Christ artwork 6">
+        </a>
+    </div>
+
+</body>
+</html>

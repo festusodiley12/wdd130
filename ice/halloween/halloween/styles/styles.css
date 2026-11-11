@@ -1,0 +1,167 @@
+
+/* HALLOWEEN WEBSITE THEME */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #100c16, #301638);
+  color: #fff5e9;
+  font-family: Georgia, serif;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: linear-gradient(135deg, #1a1022, #54204d);
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 5px solid #ff7518;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ff7518;
+  text-shadow: 3px 3px 0 black, 0 0 20px #ff7518;
+}
+
+h2, h3 {
+  color: #ff7518;
+  text-shadow: 2px 2px 4px black;
+}
+
+nav {
+  background-color: #301b3e;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 18px;
+  margin: 5px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background-color: #ff7518;
+  color: black;
+  transform: scale(1.08);
+}
+
+main {
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 25px;
+}
+
+section, article, aside, .content-box {
+  background-color: #21172c;
+  padding: 25px;
+  margin: 25px 0;
+  border: 2px solid #a855f7;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #0008;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+a {
+  color: #ffae56;
+}
+
+a:hover {
+  color: #d9a5ff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #ff7518;
+  box-shadow: 0 0 18px #ff751866;
+}
+
+ul, ol {
+  padding-left: 30px;
+}
+
+li {
+  margin: 10px 0;
+}
+
+button, input[type="submit"] {
+  background-color: #ff7518;
+  color: black;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #a855f7;
+  color: white;
+  transform: scale(1.05);
+}
+
+input, textarea, select {
+  max-width: 100%;
+  padding: 10px;
+  border: 2px solid #a855f7;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ff7518;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #60235c;
+  color: white;
+}
+
+footer {
+  background-color: #1b1023;
+  color: #ffae56;
+  text-align: center;
+  padding: 25px;
+  border-top: 4px solid #ff7518;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 12px;
+  }
+
+  section, article, aside, .content-box {
+    padding: 16px;
+  }
+}

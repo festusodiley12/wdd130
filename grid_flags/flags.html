@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Flags Using CSS Grid</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f3f8;
+      margin: 0;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #1e293b;
+    }
+
+    .flags {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 30px auto;
+    }
+
+    .flag-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px #0002;
+    }
+
+    .flag {
+      display: grid;
+      width: 300px;
+      height: 200px;
+      margin: 15px auto;
+      border: 1px solid #aaa;
+      overflow: hidden;
+    }
+
+    /* Chile */
+    .chile {
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .chile-blue {
+      background: #0039a6;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 55px;
+    }
+
+    .chile-white {
+      background: white;
+    }
+
+    .chile-red {
+      background: #d52b1e;
+      grid-column: 1 / 3;
+    }
+
+    /* Denmark */
+    .denmark {
+      background: #c8102e;
+      grid-template-columns: 90px 25px 1fr;
+      grid-template-rows: 85px 25px 1fr;
+    }
+
+    .denmark-vertical {
+      background: white;
+      grid-column: 2;
+      grid-row: 1 / 4;
+    }
+
+    .denmark-horizontal {
+      background: white;
+      grid-column: 1 / 4;
+      grid-row: 2;
+    }
+
+    /* Finland */
+    .finland {
+      background: white;
+      grid-template-columns: 90px 45px 1fr;
+      grid-template-rows: 75px 45px 1fr;
+    }
+
+    .finland-vertical {
+      background: #002f6c;
+      grid-column: 2;
+      grid-row: 1 / 4;
+    }
+
+    .finland-horizontal {
+      background: #002f6c;
+      grid-column: 1 / 4;
+      grid-row: 2;
+    }
+
+    /* Benin */
+    .benin {
+      grid-template-columns: 2fr 3fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .benin-green {
+      background: #008751;
+      grid-row: 1 / 3;
+    }
+
+    .benin-yellow {
+      background: #fcd116;
+    }
+
+    .benin-red {
+      background: #e8112d;
+    }
+
+    /* Italy - Bonus */
+    .italy {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .italy-green {
+      background: #009246;
+    }
+
+    .italy-white {
+      background: white;
+    }
+
+    .italy-red {
+      background: #ce2b37;
+    }
+
+    /* Central African Republic - Super Bonus */
+    .central-african-republic {
+      position: relative;
+      grid-template-rows: repeat(4, 1fr);
+    }
+
+    .car-blue {
+      background: #003082;
+    }
+
+    .car-white {
+      background: white;
+    }
+
+    .car-green {
+      background: #289728;
+    }
+
+    .car-yellow {
+      background: #ffce00;
+    }
+
+    .car-red-stripe {
+      position: absolute;
+      background: #d21034;
+      width: 45px;
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .car-star {
+      position: absolute;
+      color: #ffce00;
+      font-size: 30px;
+      left: 28px;
+      top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Country Flags Using CSS Grid</h1>
+  <p>WDD 130 - CSS Grid Challenge</p>
+
+  <div class="flags">
+
+    <div class="flag-card">
+      <h2>Chile</h2>
+      <div class="flag chile">
+        <div class="chile-blue">★</div>
+        <div class="chile-white"></div>
+        <div class="chile-red"></div>
+      </div>
+    </div>
+
+    <div class="flag-card">
+      <h2>Denmark</h2>
+      <div class="flag denmark">
+        <div class="denmark-vertical"></div>
+        <div class="denmark-horizontal"></div>
+      </div>
+    </div>
+
+    <div class="flag-card">
+      <h2>Finland</h2>
+      <div class="flag finland">
+        <div class="finland-vertical"></div>
+        <div class="finland-horizontal"></div>
+      </div>
+    </div>
+
+    <div class="flag-card">
+      <h2>Benin</h2>
+      <div class="flag benin">
+        <div class="benin-green"></div>
+        <div class="benin-yellow"></div>
+        <div class="benin-red"></div>
+      </div>
+    </div>
+
+    <div class="flag-card">
+      <h2>Italy - Bonus</h2>
+      <div class="flag italy">
+        <div class="italy-green"></div>
+        <div class="italy-white"></div>
+        <div class="italy-red"></div>
+      </div>
+    </div>
+
+    <div class="flag-card">
+      <h2>Central African Republic - Super Bonus</h2>
+      <div class="flag central-african-republic">
+        <div class="car-blue"></div>
+        <div class="car-white"></div>
+        <div class="car-green"></div>
+        <div class="car-yellow"></div>
+        <div class="car-red-stripe"></div>
+        <div class="car-star">★</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

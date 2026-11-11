@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlight</title>
+
+    <style>
+        body {
+            background-color: #E8ECED;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .spotlight {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 10px 20px 30px;
+            background: linear-gradient(135deg, #183c65, #0066a6, #142d58);
+            border: 6px solid black;
+            border-radius: 35px;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .spotlight::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url("images/christus.webp");
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            background-size: 55% auto;
+            opacity: 0.25;
+            pointer-events: none;
+        }
+
+        h1, h2, .apostles {
+            position: relative;
+        }
+
+        h1 {
+            font-size: 30px;
+            font-weight: normal;
+            margin: 0 0 15px;
+        }
+
+        h2 {
+            font-size: 21px;
+            font-weight: normal;
+            margin: 15px 0 10px;
+        }
+
+        .apostles {
+            display: grid;
+            grid-template-columns: repeat(4, 85px);
+            justify-content: center;
+            gap: 25px 15px;
+        }
+
+        .presidency {
+            grid-template-columns: repeat(3, 110px);
+        }
+
+        .apostles img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border: 5px solid white;
+            border-radius: 50%;
+            box-sizing: border-box;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+
+        .presidency img {
+            width: 105px;
+            height: 105px;
+        }
+
+        .apostles img:hover {
+            border-color: gold;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 480px) {
+            .apostles {
+                grid-template-columns: repeat(3, 85px);
+            }
+
+            .presidency {
+                grid-template-columns: repeat(3, 85px);
+            }
+
+            .presidency img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="spotlight">
+        <h1>First Presidency</h1>
+
+        <div class="apostles presidency">
+            <img src="images/oaks.webp" alt="Dallin H. Oaks">
+            <img src="images/eyring.webp" alt="Henry B. Eyring">
+            <img src="images/christofferson.webp" alt="D. Todd Christofferson">
+        </div>
+
+        <h2>Quorum of the Twelve Apostles</h2>
+
+        <div class="apostles">
+            <img src="images/cook.webp" alt="Quentin L. Cook">
+            <img src="images/uchtdorf.webp" alt="Dieter F. Uchtdorf">
+            <img src="images/bednar.webp" alt="David A. Bednar">
+            <img src="images/anderson.webp" alt="Neil L. Andersen">
+
+            <img src="images/rasband.webp" alt="Ronald A. Rasband">
+            <img src="images/stevenson.webp" alt="Gary E. Stevenson">
+            <img src="images/renlund.webp" alt="Dale G. Renlund">
+            <img src="images/gong.webp" alt="Gerrit W. Gong">
+
+            <img src="images/soares.webp" alt="Ulisses Soares">
+            <img src="images/kearon.webp" alt="Patrick Kearon">
+            <img src="images/causse.webp" alt="Gerald Causse">
+            <img src="images/gilbert.webp" alt="Clark G. Gilbert">
+        </div>
+    </main>
+</body>
+</html>
